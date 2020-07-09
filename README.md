@@ -14,14 +14,21 @@ We no longer need a custom `getInput` function, because we understand arrays now
 
 ### Steps
 
-* Create a `main.js` file. This will be the only place we'll have to work!
-* We're going to need all three of our functions, for search, convert, and random. `require` each in from its respective file.
-* Use `process.argv` to find the command they typed in. So if they typed in `node main.js search pizza`, 'search' is what you want.
+* Create a `main.js` file. This will be the only place we'll have to work!  ***COMPLETE***
+  
+* We're going to need all three of our functions, for search, convert, and random. `require` each in from its respective file. ***COMPLETE***
+  
+* Use `process.argv` to find the command they typed in. So if they typed in `node main.js search pizza`, 'search' is what you want. ***COMPLETE**
+  
 * Now we just have to 1. check WHICH command the user typed in, 2. pass the right values into the right function given what the user wants us to do, and 3. `console.log` an appropriate response.
+  
 * If the user's command was 'convert', we will have to MAKE an array out of all the words the user typed in after that command. An array of strings is exactly what `emagify` is expecting, so let's give it what it wants! Before console.logging the return value of giving that array to `emagify`, we may have to massage the output somewhat. Look into what `.join` can do for you to make the array of words into one long space-separated string!
+  
 * If their command was 'search', we only need to look at one word after that command, as `emagiSearch` is only expecting a single-word string. We will get an array back from `emagiSearch`. How can we print an array, though? Hmm.
+
 * If their command was 'random', we only need to pass `symbols` to our `randomElement` function. It will give us back one string, which we can `console.log`.
-* If it was none of those, we should give the user a proper message telling them how they SHOULD be using our app.
+  
+* If it was none of those, we should give the user a proper message telling them how they SHOULD be using our app. ***COMPLETE**
 
 
 ### Stretch Goals
